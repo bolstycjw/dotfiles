@@ -68,3 +68,13 @@ else
     echo_item "Skipping Neovim install" red
   fi
 fi
+
+# -- Karabiner -----------------------------------------------------------------
+
+if get_boolean_response "Do you want to install Karabiner configuration files?"
+then
+  ln -sf ~/dotfiles/karabiner ~/.config
+  echo_item "Linked karabiner" "green"
+else
+  echo_item "Ignoring Karabiner configuration" red
+fi
