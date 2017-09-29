@@ -5,6 +5,29 @@ export DOTFILES="$HOME/dotfiles"
 # Helper scripts
 source "$DOTFILES/scripts/helpers/functions.sh"
 
+# -- Zsh -----------------------------------------------------------------------
+ZSH="$HOME/.oh-my-zsh"
+ZSH_CUSTOM="$DOTFILES/zsh/custom"
+fpath=( "$DOTFILES/zsh/custom" $fpath)
+
+# -- Theme ---------------------------------------------------------------------
+ZSH_THEME="pure"
+
+# -- ZSH Plugins ---------------------------------------------------------------
+plugins=(git tmux npm bower vi-mode pj zsh-syntax-highlighting)
+if exists "virtualenvwrapper"; then plugins+=virtualenvwrapper; fi
+
+fpath=($DOTFILES/zsh/custom/completion $fpath)
+
+# Add Homebrew completions to config if they can be found
+local brew_completions="$(brew --prefix)/share/zsh/site-functions"
+if [[ -d $brew_completions ]]; then
+  fpath=($fpath $brew_completions)
+fi
+
+# -- Oh My Zsh -----------------------------------------------------------------
+source $ZSH/oh-my-zsh.sh
+
 # -- Named Directories ---------------------------------------------------------
 unsetopt auto_name_dirs
 

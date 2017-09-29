@@ -38,26 +38,22 @@ echo ""
 if exists "zsh"; then
   if get_boolean_response "Do you want to install ZSH configuration files?"; then
 
-    # -- Prezto
-    if [ -d $HOME/.zprezto/ ]; then
-      echo_item "Prezto is already installed" "green"
-    else
-      git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-      zsh -c '
-        setopt EXTENDED_GLOB
-        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-          ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-        done
-      '
-    fi
-
     # -- ZSHRC
     ln -sf $HOME/dotfiles/zsh/zshrc $HOME/.zshrc
     echo_item "Linked zshrc" "green"
 
-    # -- ZPREZTORC
-    ln -sf $HOME/dotfiles/zsh/zpreztorc $HOME/.zpreztorc
-    echo_item "Linked zpreztorc" "green"
+    # -- OH MY ZSH
+    if [ -d $HOME/.oh-my-zsh/ ]; then
+      echo_item "Oh my ZSH is already installed" "green"
+    else
+      if exists "curl"; then
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+      elif exists "wget"; then
+        sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+      else
+        echo_item "You need either curl or wget installed to download Oh My ZSH"
+      fi
+    fi
 
   else
     echo_item "Ignoring ZSH configuration" "red"
