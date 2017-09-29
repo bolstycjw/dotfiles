@@ -1,0 +1,117 @@
+# -- Dotfiles Directory --------------------------------------------------------
+export XDG_CONFIG_HOME="$HOME/.config"
+export DOTFILES="$HOME/dotfiles"
+
+# Helper scripts
+source "$DOTFILES/scripts/helpers/functions.sh"
+
+# -- Named Directories ---------------------------------------------------------
+unsetopt auto_name_dirs
+
+# -- Completion Config ---------------------------------------------------------
+zstyle ':completion:*:*:vim:*:*files' ignored-patterns '*.class'
+
+# -- Command History -----------------------------------------------------------
+export HISTSIZE=500
+export SAVEHIST=500
+
+# -- Options -------------------------------------------------------------------
+unsetopt correct_all
+unsetopt correct
+
+# -- Variables -----------------------------------------------------------------
+export EDITOR="$(brew --prefix)/bin/nvim"
+alias docker-cleanup=docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
+
+# -- Aliases -------------------------------------------------------------------
+if [[ -f "$DOTFILES/aliases" ]]; then
+  source $DOTFILES/aliases
+fi
+
+if [[ -f "$HOME/.aliases" ]]; then
+    source $HOME/.aliases
+fi
+
+if exists "hub"; then alias git=hub; fi
+
+codeclimate() {
+  docker run --interactive --tty --rm --env CODE_PATH="$PWD" --volume "$PWD":/code --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp/cc:/tmp/cc codeclimate/codeclimate "$@"
+}
+
+export PATH="$PATH:/opt/vagrant/bin"
+export PATH="/usr/local/sbin:$HOME/bin:$PATH"
+export PATH="./bin:$PATH"
+
+# -- Functions -----------------------------------------------------------------
+
+# Extract archive based on file type
+# Taken from http://justinlilly.com/dotfiles/zsh.html
+extract () {
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)        tar xjf $1        ;;
+            *.tar.gz)         tar xzf $1        ;;
+            *.bz2)            bunzip2 $1        ;;
+            *.rar)            unrar x $1        ;;
+            *.gz)             gunzip $1         ;;
+            *.tar)            tar xf $1         ;;
+            *.tbz2)           tar xjf $1        ;;
+            *.tgz)            tar xzf $1        ;;
+            *.zip)            unzip $1          ;;
+            *.Z)              uncompress $1     ;;
+            *)                echo "'$1' cannot be extracted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+# -- Git -----------------------------------------------------------------------
+zstyle ':completion:*:*:hub:*' user-commands ${${(M)${(k)commands}:#git-*}/git-/}
+_git-delete-tag() { compadd "$@" $(git tag) }
+
+# -- Tmux ----------------------------------------------------------------------
+export DISABLE_AUTO_TITLE="true"
+alias tmux="tmux -2"
+
+# -- TheFuck -------------------------------------------------------------------
+#    https://github.com/nvbn/thefuck
+alias fuck='$(thefuck $(fc -ln -1))'
+
+# -- Add DOTFILES bin to PATH --------------------------------------------------
+export PATH="$PATH:$DOTFILES/bin"
+
+# -- Xiki ----------------------------------------------------------------------
+if [[ -f "$HOME/.xsh" ]]; then
+  source $HOME/.xsh
+fi
+
+# -- fzf -----------------------------------------------------------------------
+if [ -f ~/.fzf.zsh ]; then
+  source ~/.fzf.zsh
+  export FZF_TMUX=1
+  export FZF_DEFAULT_OPTS='--color 16,info:6,hl:13,hl+:13'
+  export FZF_DEFAULT_COMMAND="rg --files-with-matches --no-messages -F ''"
+  export FZF_CTRL_T_COMMAND="rg --files-with-matches --no-messages --hidden -F '' | grep -v .git/"
+fi
+
+# -- asdf ---------------------------------------------------------------------
+if [[ -d "$HOME/.asdf" ]]; then
+  source $HOME/.asdf/asdf.sh
+  source $HOME/.asdf/completions/asdf.bash
+fi
+
+# -- Yarn ---------------------------------------------------------------------
+# Make the shell aware of global packages installed by Yarn
+local yarn_global_modules="$XDG_CONFIG_HOME/yarn/global/node_modules"
+if [[ -d "$yarn_global_modules/.bin" ]]; then
+  export PATH="$PATH:$yarn_global_modules/.bin"
+fi
+
+# -- Prezto -----------------------------------------------------------------
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# autosuggest accept
+bindkey '^ ' autosuggest-accept
