@@ -73,7 +73,7 @@ fi
 
 if get_boolean_response "Do you want to install Karabiner configuration files?"
 then
-  ln -sf ~/dotfiles/karabiner ~/.config/karabiner
+  cp ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
   echo_item "Linked karabiner" "green"
 else
   echo_item "Ignoring Karabiner configuration" red
