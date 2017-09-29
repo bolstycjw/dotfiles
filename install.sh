@@ -43,6 +43,12 @@ if exists "zsh"; then
       echo_item "Prezto is already installed" "green"
     else
       git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+      zsh -c '
+        setopt EXTENDED_GLOB
+        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+          ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+        done
+      '
     fi
 
     # -- ZSHRC
@@ -77,8 +83,11 @@ echo ""
 # -- NEOVIM --------------------------------------------------------------------
 
 # TODO: Ask if the user wants to copy the current configuration to a .local file
-if get_boolean_response "Do you want to install the Neoim configuration file?"
+if get_boolean_response "Do you want to install the Neovim configuration file?"
 then
+  if [ ! -d $HOME/.config/nvim ]; then
+    mkdir -p $HOME/.config/nvim
+  fi
   ln -sf $HOME/dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
   echo_item "Linked Neovim configuration" "green"
 else
