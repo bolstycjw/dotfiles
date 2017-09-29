@@ -38,16 +38,20 @@ echo ""
 if exists "zsh"; then
   if get_boolean_response "Do you want to install ZSH configuration files?"; then
 
-    # -- ZSHRC
-    ln -sf $HOME/dotfiles/zsh/zshrc $HOME/.zshrc
-    echo_item "Linked zshrc" "green"
-
     # -- Prezto
     if [ -d $HOME/.zprezto/ ]; then
       echo_item "Prezto is already installed" "green"
     else
       git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
     fi
+
+    # -- ZSHRC
+    ln -sf $HOME/dotfiles/zsh/zshrc $HOME/.zshrc
+    echo_item "Linked zshrc" "green"
+
+    # -- ZPREZTORC
+    ln -sf $HOME/dotfiles/zsh/zpreztorc $HOME/.zpreztorc
+    echo_item "Linked zpreztorc" "green"
 
   else
     echo_item "Ignoring ZSH configuration" "red"
