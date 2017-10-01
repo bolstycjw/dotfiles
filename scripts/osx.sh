@@ -73,6 +73,9 @@ fi
 
 if get_boolean_response "Do you want to install Karabiner configuration files?"
 then
+  if [ ! -d $HOME/.config/karabiner ]; then
+    mkdir -p $HOME/.config/karabiner
+  fi
   cp ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
   echo_item "Linked karabiner" "green"
 else
