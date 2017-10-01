@@ -8,7 +8,7 @@ source "$DOTFILES/scripts/helpers/functions.sh"
 # -- Zsh -----------------------------------------------------------------------
 ZSH="$HOME/.oh-my-zsh"
 ZSH_CUSTOM="$DOTFILES/zsh/custom"
-fpath=( "$DOTFILES/zsh/custom" $fpath)
+fpath=("$DOTFILES/zsh/custom" $fpath)
 
 # -- Theme ---------------------------------------------------------------------
 ZSH_THEME="pure"
@@ -129,11 +129,6 @@ fi
 local yarn_global_modules="$XDG_CONFIG_HOME/yarn/global/node_modules"
 if [[ -d "$yarn_global_modules/.bin" ]]; then
   export PATH="$PATH:$yarn_global_modules/.bin"
-fi
-
-# -- Prezto -----------------------------------------------------------------
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # autosuggest accept

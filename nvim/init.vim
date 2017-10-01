@@ -1,5 +1,5 @@
 " Section: Plugins {{{1
-call plug#begin()
+call plug#begin('~/.local/share/nvim/plugged')
 
 " UI {{{2
 Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
