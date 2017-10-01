@@ -132,8 +132,8 @@ let g:user_emmet_settings = {
 " Section: General Config {{{1
 " ----------------------------
 let mapleader = " "
-" let &runtimepath .= "," . $DOTFILES . "/nvim"  " Add DOTFILES to runtimepath
-" let &packpath .= "," . $DOTFILES . "/nvim"
+let &runtimepath .= "," . $DOTFILES . "/nvim"  " Add DOTFILES to runtimepath
+let &packpath .= "," . $DOTFILES . "/nvim"
 
 set number                                  " Show line numbers
 set noswapfile                              " New buffers will be loaded without creating a swapfile
