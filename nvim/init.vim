@@ -464,7 +464,7 @@ inoremap <C-u> <ESC>mzgUiw`za
 nnoremap <silent> <F1> :call utils#nerdWrapper()<CR>
 
 " Free
-" nnoremap <silent> <F2>
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " Free
 " nnoremap <silent> <F3>
