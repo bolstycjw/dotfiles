@@ -239,3 +239,16 @@ function! g:utils#blockHeading(width, word) abort
   :put =l:word_line
   :put =l:comment_line
 endfunction
+
+let g:terminal_buffer = 0
+
+" Terminal wrapper
+function! g:utils#terminalWrapper() abort
+  if g:terminal_buffer
+    execute g:terminal_buffer . 'buffer'
+    normal! A
+  else
+    :terminal
+    let g:terminal_buffer = bufnr('%')
+  endif
+endfunction
