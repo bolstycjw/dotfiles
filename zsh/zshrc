@@ -25,9 +25,6 @@ if [[ -d $brew_completions ]]; then
   fpath=($fpath $brew_completions)
 fi
 
-# autosuggest accept
-bindkey '^ ' autosuggest-accept
-
 # -- Oh My Zsh -----------------------------------------------------------------
 source $ZSH/oh-my-zsh.sh
 
@@ -121,15 +118,19 @@ if [ -f ~/.fzf.zsh ]; then
   export FZF_CTRL_T_COMMAND="rg --files-with-matches --no-messages --hidden -F '' | grep -v .git/"
 fi
 
-# -- asdf ---------------------------------------------------------------------
+# -- asdf ----------------------------------------------------------------------
 if [[ -d "$HOME/.asdf" ]]; then
   source $HOME/.asdf/asdf.sh
   source $HOME/.asdf/completions/asdf.bash
 fi
 
-# -- Yarn ---------------------------------------------------------------------
+# -- Yarn ----------------------------------------------------------------------
 # Make the shell aware of global packages installed by Yarn
 local yarn_global_modules="$XDG_CONFIG_HOME/yarn/global/node_modules"
 if [[ -d "$yarn_global_modules/.bin" ]]; then
   export PATH="$PATH:$yarn_global_modules/.bin"
 fi
+
+# -- Custom Settings -----------------------------------------------------------
+# autosuggest accept
+bindkey '^ ' autosuggest-accept

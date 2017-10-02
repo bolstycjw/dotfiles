@@ -23,6 +23,7 @@ else
   if get_boolean_response "Do you want to install asdf?"; then
     brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.0
+    ln -sf $HOME/dotfiles/asdf/asdfrc $HOME/.asdfrc
   else
     echo_item "Skipping asdf install" red
   fi
