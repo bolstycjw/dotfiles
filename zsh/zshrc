@@ -14,7 +14,7 @@ fpath=("$DOTFILES/zsh/custom" $fpath)
 ZSH_THEME="pure"
 
 # -- ZSH Plugins ---------------------------------------------------------------
-plugins=(git tmux npm bower vi-mode pj zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git tmux npm bower vi-mode pj zsh-autosuggestions zsh-syntax-highlighting)
 if exists "virtualenvwrapper"; then plugins+=virtualenvwrapper; fi
 
 fpath=($DOTFILES/zsh/custom/completion $fpath)
@@ -24,6 +24,9 @@ local brew_completions="$(brew --prefix)/share/zsh/site-functions"
 if [[ -d $brew_completions ]]; then
   fpath=($fpath $brew_completions)
 fi
+
+# autosuggest accept
+bindkey '^ ' autosuggest-accept
 
 # -- Oh My Zsh -----------------------------------------------------------------
 source $ZSH/oh-my-zsh.sh
@@ -130,6 +133,3 @@ local yarn_global_modules="$XDG_CONFIG_HOME/yarn/global/node_modules"
 if [[ -d "$yarn_global_modules/.bin" ]]; then
   export PATH="$PATH:$yarn_global_modules/.bin"
 fi
-
-# autosuggest accept
-bindkey '^ ' autosuggest-accept
