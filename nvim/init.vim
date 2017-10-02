@@ -4,7 +4,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " UI {{{2
 Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
 Plug 'junegunn/goyo.vim'
-Plug 'retorillo/airline-tablemode.vim'
 Plug 'ryanoasis/vim-webdevicons'
 Plug 'trevordmiller/nova-vim'
 Plug 'vim-airline/vim-airline'            " Handy info
