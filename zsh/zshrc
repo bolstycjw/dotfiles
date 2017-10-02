@@ -14,7 +14,7 @@ fpath=("$DOTFILES/zsh/custom" $fpath)
 ZSH_THEME="pure"
 
 # -- ZSH Plugins ---------------------------------------------------------------
-plugins=(git tmux npm bower vi-mode pj zsh-syntax-highlighting)
+plugins=(git tmux npm bower vi-mode pj zsh-syntax-highlighting zsh-autosuggestions)
 if exists "virtualenvwrapper"; then plugins+=virtualenvwrapper; fi
 
 fpath=($DOTFILES/zsh/custom/completion $fpath)
