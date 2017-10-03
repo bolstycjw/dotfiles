@@ -448,7 +448,8 @@ nnoremap <silent> <F7> :set list!<CR> :set list?<CR>
 
 " New term buffer
 nnoremap <silent> <F8> :call utils#terminalWrapper()<CR>
-tnoremap <silent> <F8> <C-\><C-n>:buffer #<CR>
+tnoremap <silent> <ESC> <C-\><C-n>
+tnoremap <silent> <F8> <C-\><C-n>:tabclose<CR>
 
 " Fire REST Request
 nnoremap <silent> <F9> :call VrcQuery()<CR>

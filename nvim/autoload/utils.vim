@@ -244,13 +244,12 @@ let g:terminal_buffer = 0
 
 " Terminal wrapper
 function! g:utils#terminalWrapper() abort
-  if g:terminal_buffer
-    execute g:terminal_buffer . 'buffer'
+  if g:terminal_buffer =~ '\v^term://'
+    execute 'tabnew ' . g:terminal_buffer
     normal! A
   else
-    if bufname('%') == ''
-      :terminal
-      let g:terminal_buffer = bufnr('%')
-    endif
+    :tabnew
+    :terminal
+    let g:terminal_buffer = bufname('%')
   endif
 endfunction
