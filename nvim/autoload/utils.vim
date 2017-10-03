@@ -248,7 +248,9 @@ function! g:utils#terminalWrapper() abort
     execute g:terminal_buffer . 'buffer'
     normal! A
   else
-    :terminal
-    let g:terminal_buffer = bufnr('%')
+    if bufname('%') == ''
+      :terminal
+      let g:terminal_buffer = bufnr('%')
+    endif
   endif
 endfunction
