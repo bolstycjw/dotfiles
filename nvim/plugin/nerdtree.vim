@@ -9,3 +9,6 @@ let NERDTreeIgnore = [
       \'^node_modules[[dir]]',
       \'^tmp[[dir]]'
       \]
+
+" Show hidden files
+let NERDTreeShowHidden=1
