@@ -217,7 +217,7 @@ endif
 " }}}2
 
 " Omni Completion settings {{{2
-set completeopt=menuone,longest,noselect
+set completeopt-=preview
 set wildignore=*.o,*.obj,*~
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*

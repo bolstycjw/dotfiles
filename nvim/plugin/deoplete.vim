@@ -21,6 +21,3 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
-
-function! deoplete#mapping#_set_completeopt() abort
-endfunction
