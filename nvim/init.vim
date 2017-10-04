@@ -16,6 +16,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-grepper'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/ctags.vim'              " ctags related stuff
+Plug 'ludovicchabant/vim-gutentags'
 " }}}2
 
 " File Navigation {{{2
@@ -476,9 +477,6 @@ cnoremap qq qall
 " }}}2
 
 " Custom commands and functions {{{2
-" Generate tags definitions
-command! GTags :call utils#generateCtags()
-
 " Open notes
 command! Notes :call utils#openNotes()
 

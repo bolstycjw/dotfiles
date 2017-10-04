@@ -1,7 +1,17 @@
 " Shortcut to open TagBar
 noremap <leader>tb :TagbarToggle<cr>
 
-let g:tagbar_ctags_bin = "$HOME/.homebrew/bin/ctags"
+" Add support for Ruby in Tagbar
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+\ }
 
 " Add support for markdown files in tagbar.
 let g:tagbar_type_markdown = {

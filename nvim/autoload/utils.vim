@@ -90,13 +90,6 @@ function! g:utils#setUSKBLayout() abort
   silent !setxkbmap us
 endfunction
 
-" Generate ctags and put them into tags directory
-" gem install starscope
-function! g:utils#generateCtags() abort
-  silent execute '!starscope -x node_modules/ -e ctags'
-  echom 'Tags generated into tags file!'
-endfunction
-
 " Tab wrapper
 function! g:utils#tabComplete() abort
   let l:col = col('.') - 1
