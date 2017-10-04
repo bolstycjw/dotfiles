@@ -135,6 +135,3 @@ fi
 # -- Custom Settings -----------------------------------------------------------
 # autosuggest accept
 bindkey '^ ' autosuggest-accept
-
-# Homebrew github token
-export HOMEBREW_GITHUB_API_TOKEN="8cecd7d6981c08fe5733465c4f66f8f2eea2b56d"
