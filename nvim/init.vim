@@ -116,16 +116,6 @@ call plug#end()
 let g:airline_powerline_fonts = 1 " Enable the patched Powerline fonts
 " }}}3
 
-" emmet-vim {{{3
-let g:user_emmet_leader_key='<C-E>'
-
-let g:user_emmet_settings = {
-  \    'html' : {
-  \        'quote_char': "'"
-  \    }
-  \}
-" }}}3
-
 " }}}2
 
 " Section: General Config {{{1
@@ -227,7 +217,7 @@ endif
 " }}}2
 
 " Omni Completion settings {{{2
-set completeopt-=preview                    " Don't show preview scratch buffers
+set completeopt=menuone,longest,noselect
 set wildignore=*.o,*.obj,*~
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*
