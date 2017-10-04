@@ -149,6 +149,7 @@ set scrolloff=5                             " Scroll when closing to top or bott
 set updatetime=1000                         " Update time used to create swap file or other things
 set suffixesadd+=.js,.rb                    " Add js and ruby files to suffixes
 set synmaxcol=160                           " Don't try to syntax highlight minified files
+set pumheight=10                            " Completion window max size
 
 " Set language to en_US
 let $LANG = 'en_US'

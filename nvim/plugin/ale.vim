@@ -1,6 +1,8 @@
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
-\   'html': []
+\   'html': [],
+\   'eruby': [],
+\   'yaml': ['yamllint']
 \}
 
 let g:ale_fixers = {
