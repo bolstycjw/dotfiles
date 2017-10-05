@@ -420,11 +420,11 @@ inoremap <C-u> <ESC>mzgUiw`za
 " NERDTree wrapper
 nnoremap <silent> <F1> :call utils#nerdWrapper()<CR>
 
-" Free
+" NERDTree Toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
-" Free
-" nnoremap <silent> <F3>
+" Delete marks
+nnoremap <silent> <F3> :call utils#deleteAllMarks()<CR>
 
 " Toggle spelling
 nnoremap <silent> <F4> :set spell!<CR> :set spell?<CR>

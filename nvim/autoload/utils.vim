@@ -250,3 +250,8 @@ function! g:utils#terminalWrapper() abort
     endif
   endif
 endfunction
+
+function! g:utils#deleteAllMarks() abort
+  delmarks!
+  wshada!
+endfunction
