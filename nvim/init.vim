@@ -333,9 +333,6 @@ sunmap ge
 " More logical Y (default was alias for yy)
 nnoremap Y y$
 
-" Make . work with visually selected lines
-noremap . :norm.<CR>
-
 " Fix the cw at the end of line bug default vim has special treatment (:help cw)
 nmap cw ce
 nmap dw de
