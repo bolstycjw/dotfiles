@@ -86,6 +86,7 @@ Plug 'othree/html5.vim',                  { 'for': 'html' }
 Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
+Plug 'thoughtbot/vim-rspec'
 " }}}2
 
 " Python {{{2
@@ -108,6 +109,7 @@ Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 Plug 'keith/tmux.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'martin-svk/vim-yaml'
+Plug 'slim-template/vim-slim'
 " }}}2
 
 call plug#end()
@@ -443,11 +445,11 @@ tnoremap <silent> <F8> <C-\><C-n>:tabclose<CR>
 " Fire REST Request
 nnoremap <silent> <F9> :call VrcQuery()<CR>
 
-" Free
-" nnoremap <silent> <F10>
+" Replace double quotes with single quotes in buffer
+nnoremap <silent> <F10> :%s/"\([^"]*\)"/'\1'/g<CR>
 
-" Howdoi
-nnoremap <silent> <F11> :call utils#howDoI()<CR>
+" Replace single quotes with double quotes in buffer
+nnoremap <silent> <F11> :%s/'\([^']*\)'/"\1"/g<CR>
 
 " Informative echo
 nnoremap <F12> :call utils#showToggles()<CR>

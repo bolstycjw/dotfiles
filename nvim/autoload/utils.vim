@@ -242,7 +242,6 @@ function! g:utils#terminalWrapper() abort
   else
     if g:terminal_buffer =~ '\v^term://'
       execute 'tabnew ' . g:terminal_buffer
-      normal! A
     else
       :tabnew
       :terminal
