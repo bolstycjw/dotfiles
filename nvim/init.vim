@@ -59,6 +59,7 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'                 " Run tasks asychronously in Tmux
 Plug 'w0rp/ale'                           " Linter
 Plug 'wincent/terminus'
+Plug 'tpope/vim-obsession'
 " }}}2
 
 " Autocomplete {{{2
