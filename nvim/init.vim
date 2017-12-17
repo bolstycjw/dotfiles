@@ -98,7 +98,7 @@ Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
 
 " Markdown {{{2
 Plug 'reedes/vim-pencil'                  " Markdown, Writing
-Plug 'godlygeek/tabular',                 { 'for': 'markdown' } " Needed for vim-markdown
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 " }}}2
 
@@ -439,9 +439,9 @@ nnoremap <silent> <F6> :set nohlsearch!<CR> :set nohlsearch?<CR>
 nnoremap <silent> <F7> :set list!<CR> :set list?<CR>
 
 " New term buffer
-nnoremap <silent> <F8> :call utils#terminalWrapper()<CR>
-tnoremap <silent> <ESC> <C-\><C-n>
-tnoremap <silent> <F8> <C-\><C-n>:tabclose<CR>
+" nnoremap <silent> <F8> :call utils#terminalWrapper()<CR>
+" tnoremap <silent> <ESC> <C-\><C-n>
+" tnoremap <silent> <F8> <C-\><C-n>:tabclose<CR>
 
 " Fire REST Request
 nnoremap <silent> <F9> :call VrcQuery()<CR>
