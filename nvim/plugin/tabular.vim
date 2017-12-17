@@ -1,4 +1,4 @@
-vmap ,A :Tabularize<CR>
-vmap ,a<Space> :Tabularize / <CR>
-vmap ,a= :Tabularize /=<CR>
-vmap ,a: :Tabularize /:<CR>
+vmap ,A :Tabularize<CR>gv=g
+vmap ,a<Space> :Tabularize / <CR>gv=g
+vmap ,a= :Tabularize /=<CR>gv=g
+vmap ,a: :Tabularize /:<CR>gv=g
