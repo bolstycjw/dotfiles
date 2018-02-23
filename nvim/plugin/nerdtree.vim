@@ -6,7 +6,6 @@ let NERDTreeIgnore = [
       \'\.egg-info[[dir]]',
       \'__pycache__[[dir]]',
       \'^bower_components[[dir]]',
-      \'^node_modules[[dir]]',
       \'^tmp[[dir]]'
       \]
 

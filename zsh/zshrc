@@ -64,7 +64,6 @@ codeclimate() {
 
 export PATH="$PATH:/opt/vagrant/bin"
 export PATH="/usr/local/sbin:$HOME/bin:$PATH"
-export PATH="./bin:$PATH"
 
 # -- Functions -----------------------------------------------------------------
 
@@ -135,3 +134,5 @@ fi
 # -- Custom Settings -----------------------------------------------------------
 # autosuggest accept
 bindkey '^ ' autosuggest-accept
+
+export PATH="./bin:$PATH"
