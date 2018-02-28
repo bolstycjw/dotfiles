@@ -418,10 +418,10 @@ inoremap <C-u> <ESC>mzgUiw`za
 
 " Function keys {{{2
 " NERDTree wrapper
-nnoremap <silent> <F1> :call utils#nerdWrapper()<CR>
+nnoremap <silent> <C-m> :call utils#nerdWrapper()<CR>
 
 " NERDTree Toggle
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 
 " Delete marks
 nnoremap <silent> <F3> :call utils#deleteAllMarks()<CR>
