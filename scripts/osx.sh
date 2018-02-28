@@ -7,7 +7,7 @@ if exists "brew"; then
   echo_item "Homebrew is already installed" green
 else
   if get_boolean_response "Do you want to install Homebrew?"; then
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   else
     echo_item "Skipping Homebrew install" red
   fi

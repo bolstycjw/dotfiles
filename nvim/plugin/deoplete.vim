@@ -6,6 +6,7 @@ let g:deoplete#ignore_sources.javascript = ['member']
 let g:deoplete#ignore_sources.python = ['member']
 let g:deoplete#ignore_sources.ruby = ['omni']
 
+let g:deoplete#omni#input_patterns = {}
 let g:deoplete#omni#input_patterns.ruby = ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
 
 " Map `<tab>` to Deoplete
