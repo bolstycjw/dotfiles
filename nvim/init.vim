@@ -46,7 +46,7 @@ Plug 'w0rp/ale'
 " }}}2
 
 " Git {{{2
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter',            { 'tag': '932ffac' }
 Plug 'jez/vim-github-hub'
 Plug 'junegunn/gv.vim',                   { 'on': 'GV' }
 Plug 'tpope/vim-fugitive'                 " Git stuff in Vim
@@ -262,6 +262,9 @@ colorscheme nova
 " Section: Remaps {{{1
 " --------------------
 " Vim defaults overriding {{{2
+
+" Easier writing
+nnoremap ,w :write<CR>
 
 " Disabling arrow keys, space key, exmode enter
 " with Q key, help with F1, etc.
