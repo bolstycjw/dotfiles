@@ -15,6 +15,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-grepper'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/ctags.vim'              " ctags related stuff
 Plug 'ludovicchabant/vim-gutentags'
 " }}}2
@@ -43,6 +44,10 @@ Plug 'honza/vim-snippets'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
+Plug 'jiangmiao/auto-pairs'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 " }}}2
 
 " Git {{{2
@@ -402,7 +407,7 @@ vnoremap ,s :!sort<CR>
 inoremap <C-l> <C-g>u<ESC>[s1z=`]a<C-g>u
 
 " Smarter pasting
-nnoremap <Leader>p :set invpaste paste?<CR>
+" nnoremap <Leader>p :set invpaste paste?<CR>
 
 " Smart indent when entering insert mode with i on empty lines
 function! IndentWithI()
