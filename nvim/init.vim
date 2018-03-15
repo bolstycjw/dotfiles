@@ -18,6 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/ctags.vim'              " ctags related stuff
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'mileszs/ack.vim'
 " }}}2
 
 " File Navigation {{{2
