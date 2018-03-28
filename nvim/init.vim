@@ -73,6 +73,8 @@ Plug 'Shougo/deoplete.nvim',              { 'do': ':UpdateRemotePlugins' }
 Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'zchee/deoplete-jedi'
+Plug 'zchee/deoplete-clang'
+Plug 'wellle/tmux-complete.vim'
 " }}}2
 
 " Javascript {{{2
