@@ -1,0 +1,14 @@
+# ~/.tmuxinator/ide-layout.yml
+
+name: <%= @args[0] %>
+root: ~/workspace/<%= @args[0] %>
+
+windows:
+  - editor:
+      layout: f98d,230x59,0,0[230x40,0,0,0,230x18,0,41,4]
+      panes:
+        - nvim -S
+        - #empty
+  - server: #empty
+  - logs: #empty
+  - console: #empty
