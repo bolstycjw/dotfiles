@@ -136,3 +136,4 @@ fi
 bindkey '^ ' autosuggest-accept
 
 export PATH="./bin:$PATH"
+export TERM=xterm-256color

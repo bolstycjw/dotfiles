@@ -6,6 +6,7 @@ Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
 Plug 'junegunn/goyo.vim'
 Plug 'ryanoasis/vim-webdevicons'
 Plug 'trevordmiller/nova-vim'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'            " Handy info
 " }}}2
 
@@ -264,8 +265,10 @@ augroup END
 
 " Section: Theme {{{1
 " -------------------
+let &t_8f='[38;2;%lu;%lu;%lum'
+let &t_8b='[48;2;%lu;%lu;%lum'
 set background=dark
-colorscheme nova
+colorscheme gruvbox
 
 " Section: Remaps {{{1
 " --------------------
