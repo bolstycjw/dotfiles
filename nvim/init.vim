@@ -18,7 +18,7 @@ Plug 'mhinz/vim-grepper'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/ctags.vim'              " ctags related stuff
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags',      { 'tag': '0423321' }
 Plug 'mileszs/ack.vim'
 " }}}2
 
