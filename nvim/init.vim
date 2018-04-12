@@ -168,7 +168,6 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 
 " Neovim-specific settings {{{2
 if has('nvim')
-  let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                   " Set an environment variable to use the t_SI/t_EI hack
   let g:loaded_python_provider=1                        " Disable python 2 interface
   let g:python_host_skip_check=1                        " Skip python 2 host check
   let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.6.4/bin/python'

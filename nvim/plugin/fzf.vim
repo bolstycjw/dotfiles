@@ -10,6 +10,12 @@ imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 " Search for tasks across the current project
 nnoremap <C-t> :Files<cr>
 
+" Search for tags across the current project
+nnoremap <C-x><C-t> :Tags<cr>
+
+" Search for tags in current buffer
+nnoremap <leader><t> :BTags<cr>
+
 " Custom colors to match theme
 let g:fzf_colors = {
 \   'bg+':     ['bg', 'Normal'],
