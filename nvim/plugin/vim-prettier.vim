@@ -1,1 +1,3 @@
-let g:prettier#config#bracket_spacing = 'true'
+" autoformat on save by default
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue Prettier
