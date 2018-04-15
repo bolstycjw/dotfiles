@@ -9,6 +9,8 @@ let g:deoplete#ignore_sources.ruby = ['omni']
 let g:deoplete#omni#input_patterns = {}
 let g:deoplete#omni#input_patterns.ruby = ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
 
+let g:deoplete#file#enable_buffer_path = 1
+
 " Map `<tab>` to Deoplete
 inoremap <silent><expr> <TAB>
   \ pumvisible()
