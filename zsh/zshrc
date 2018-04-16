@@ -15,7 +15,7 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 ZSH_THEME="pure"
 
 # -- ZSH Plugins ---------------------------------------------------------------
-plugins=(z gem ruby rails yarn asdf brew git tmux npm bower vi-mode pj zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf aws bower brew docker docker-compose gem git history npm pip pj rails rake ruby tmux tmuxinator vi-mode yarn z zsh-autosuggestions zsh-syntax-highlighting)
 if exists "virtualenvwrapper"; then plugins+=virtualenvwrapper; fi
 
 fpath=($DOTFILES/zsh/custom/completion $fpath)
