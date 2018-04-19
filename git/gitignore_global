@@ -1,6 +1,9 @@
 # DB Files
 sqlite-backup.db
 
+# Ruby files
+.byebug_history
+
 # Compiled Python files
 *.pyc
 
@@ -18,6 +21,7 @@ Thumbs.db
 
 # Tag Files
 tags
+tags.*
 
 # Common node stuff
 node_modules
