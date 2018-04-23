@@ -250,7 +250,7 @@ autocmd VimResized * :wincmd =
 autocmd CursorHold * if getcmdwintype() == '' | checktime | endif
 
 " Set common json filetypes without json extensions
-autocmd BufRead,BufNewFile .eslintrc,.jscsrc,.jshintrc,.babelrc, .prettierrc set ft=json
+autocmd BufRead,BufNewFile .eslintrc,.jscsrc,.jshintrc,.babelrc,.prettierrc set ft=json
 
 " Make sure Vim returns to the same line when you reopen a file. Thanks, Amit and Steve Losh. {{{2
 augroup line_return
