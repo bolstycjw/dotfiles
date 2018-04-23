@@ -250,7 +250,7 @@ autocmd VimResized * :wincmd =
 autocmd CursorHold * if getcmdwintype() == '' | checktime | endif
 
 " Set common json filetypes without json extensions
-autocmd BufRead,BufNewFile .eslintrc,.jscsrc,.jshintrc,.babelrc set ft=json
+autocmd BufRead,BufNewFile .eslintrc,.jscsrc,.jshintrc,.babelrc, .prettierrc set ft=json
 
 " Make sure Vim returns to the same line when you reopen a file. Thanks, Amit and Steve Losh. {{{2
 augroup line_return
@@ -354,7 +354,7 @@ nmap cw ce
 nmap dw de
 
 " Matching brackets with TAB (using matchit) (Breaks the <C-i> jump)
-map <TAB> %
+" map <TAB> %
 silent! unmap [%
 silent! unmap ]%
 
