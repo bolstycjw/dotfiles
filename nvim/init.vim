@@ -97,6 +97,7 @@ Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'thoughtbot/vim-rspec'
+Plug 'uplus/deoplete-solargraph'
 " }}}2
 
 " Python {{{2
