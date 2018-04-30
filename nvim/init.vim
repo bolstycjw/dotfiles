@@ -116,6 +116,10 @@ Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 " }}}2
 
+" Golang {{{2
+Plug 'fatih/vim-go',                      { 'for': 'golang' }
+" }}}2
+
 " Other languages {{{2
 Plug 'keith/tmux.vim'
 Plug 'ekalinin/Dockerfile.vim'
