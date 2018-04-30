@@ -117,7 +117,7 @@ Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 " }}}2
 
 " Golang {{{2
-Plug 'fatih/vim-go',                      { 'for': 'golang' }
+Plug 'fatih/vim-go',                      { 'for': 'go' }
 " }}}2
 
 " Other languages {{{2
