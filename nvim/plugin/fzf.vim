@@ -8,7 +8,7 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 
 " Search for tasks across the current project
-nnoremap <C-t> :Files<cr>
+nnoremap <C-p> :Files<cr>
 
 " Search for tags across the current project
 nnoremap <C-x><C-t> :Tags<cr>

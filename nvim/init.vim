@@ -20,6 +20,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/ctags.vim'              " ctags related stuff
 Plug 'ludovicchabant/vim-gutentags',      { 'tag': '0423321' }
 Plug 'mileszs/ack.vim'
+Plug 'Shougo/denite.nvim'
 " }}}2
 
 " File Navigation {{{2
@@ -71,17 +72,14 @@ Plug 'tpope/vim-obsession'
 
 " Autocomplete {{{2
 Plug 'Shougo/deoplete.nvim',              { 'do': ':UpdateRemotePlugins' }
-Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
-Plug 'carlitux/deoplete-ternjs'
-Plug 'zchee/deoplete-jedi'
-Plug 'zchee/deoplete-clang'
-Plug 'wellle/tmux-complete.vim'
 " }}}2
 
 " Javascript {{{2
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
+Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
+Plug 'carlitux/deoplete-ternjs'
 " }}}2
 
 " HTML/CSS {{{2
@@ -104,6 +102,7 @@ Plug 'uplus/deoplete-solargraph'
 Plug 'klen/python-mode',                  { 'for': 'python' }
 Plug 'davidhalter/jedi-vim',              { 'for': 'python' }
 Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
+Plug 'zchee/deoplete-jedi',               { 'for': 'python' }
 " }}}2
 
 " Markdown {{{2
@@ -118,6 +117,7 @@ Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 
 " Golang {{{2
 Plug 'fatih/vim-go',                      { 'for': 'go' }
+Plug 'zchee/deoplete-go',                 { 'for': 'go' }
 " }}}2
 
 " Other languages {{{2
@@ -125,6 +125,8 @@ Plug 'keith/tmux.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'martin-svk/vim-yaml'
 Plug 'slim-template/vim-slim'
+Plug 'zchee/deoplete-clang'
+Plug 'wellle/tmux-complete.vim'
 " }}}2
 
 call plug#end()
