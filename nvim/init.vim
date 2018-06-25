@@ -80,6 +80,7 @@ Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
 Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
 Plug 'carlitux/deoplete-ternjs'
+Plug 'moll/vim-node',                     { 'for': 'javascript' }
 " }}}2
 
 " HTML/CSS {{{2
