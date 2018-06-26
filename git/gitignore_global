@@ -28,6 +28,7 @@ node_modules
 bower_components
 tmp
 .tern-port
+.tern-project
 npm-debug.log
 
 # VS Code Files
