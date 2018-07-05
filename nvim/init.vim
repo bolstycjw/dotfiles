@@ -50,7 +50,8 @@ Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+  \ 'for': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+Plug 'Chiel92/vim-autoformat'
 " }}}2
 
 " Git {{{2
@@ -81,6 +82,8 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
+Plug 'HerringtonDarkholme/yats.vim',       { 'for': ['typescript', 'typescriptreact'] }
+Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
 " }}}2
 
 " HTML/CSS {{{2
@@ -119,6 +122,11 @@ Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 " Golang {{{2
 Plug 'fatih/vim-go',                      { 'for': 'go' }
 Plug 'zchee/deoplete-go',                 { 'for': 'go' }
+" }}}2
+
+" Rust {{{2
+Plug 'rust-lang/rust.vim',                { 'for': 'rust' }
+Plug 'sebastianmarkow/deoplete-rust',     { 'for': 'rust' }
 " }}}2
 
 " Other languages {{{2

@@ -104,9 +104,13 @@ alias fuck='$(thefuck $(fc -ln -1))'
 # -- Add DOTFILES bin to PATH --------------------------------------------------
 export PATH="$PATH:$DOTFILES/bin"
 
-# -- Add golang bin to PATH --------------------------------------------------
+# -- Add golang bin to PATH ----------------------------------------------------
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+
+# -- Add rust to PATH ----------------------------------------------------------
+export RUSTPATH="$HOME/.cargo"
+export PATH="$PATH:$RUSTPATH/bin"
 
 # -- Xiki ----------------------------------------------------------------------
 if [[ -f "$HOME/.xsh" ]]; then
