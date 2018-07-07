@@ -82,7 +82,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
-Plug 'HerringtonDarkholme/yats.vim',       { 'for': ['typescript', 'typescriptreact'] }
+Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescriptreact'] }
 Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
 " }}}2
 
@@ -98,8 +98,8 @@ Plug 'othree/html5.vim',                  { 'for': 'html' }
 Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
-Plug 'thoughtbot/vim-rspec'
-Plug 'uplus/deoplete-solargraph'
+Plug 'thoughtbot/vim-rspec',              { 'for': 'ruby' }
+Plug 'uplus/deoplete-solargraph',         { 'for': 'ruby' }
 " }}}2
 
 " Python {{{2

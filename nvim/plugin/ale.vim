@@ -10,7 +10,8 @@ let g:ale_linters = {
 let g:ale_linter_aliases = { 'typescriptreact': 'typescript' }
 
 let g:ale_fixers = {
-\   'javascript': ['eslint']
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
