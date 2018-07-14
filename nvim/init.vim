@@ -69,6 +69,7 @@ Plug 'tpope/vim-dispatch'                 " Run tasks asychronously in Tmux
 Plug 'w0rp/ale'                           " Linter
 Plug 'wincent/terminus'
 Plug 'tpope/vim-obsession'
+Plug 'Shougo/vimproc.vim',                {'do' : 'make'}
 " }}}2
 
 " Autocomplete {{{2
@@ -84,6 +85,7 @@ Plug 'carlitux/deoplete-ternjs'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescriptreact'] }
 Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
+Plug 'Quramy/tsuquyomi',                  { 'for': ['typescript', 'typescriptreact'] }
 " }}}2
 
 " HTML/CSS {{{2
