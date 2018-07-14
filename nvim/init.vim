@@ -43,7 +43,7 @@ Plug 'tpope/vim-commentary'               " Comments stuff
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'                 " Change word surroundings
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+Plug 'bolstycjw/vim-snippets'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
