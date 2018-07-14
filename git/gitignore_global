@@ -36,3 +36,6 @@ ember.d.ts
 
 # ASDF Tool Versions
 .tool-versions
+
+# VIM
+Session.vim
