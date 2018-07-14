@@ -1,7 +1,7 @@
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
-\   'typescript': ['tslint', 'tsserver', 'typecheck'],
-\   'typescriptreact': ['tslint', 'tsserver', 'typecheck'],
+\   'typescript': ['tsserver', 'typecheck'],
+\   'typescriptreact': ['tsserver', 'typecheck'],
 \   'html': [],
 \   'eruby': [],
 \   'yaml': ['yamllint']
