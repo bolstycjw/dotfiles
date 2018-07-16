@@ -446,6 +446,9 @@ nnoremap <expr> i IndentWithI()
 " Uppercase word in insert mode
 inoremap <C-u> <ESC>mzgUiw`za
 
+" Clear gutter signs
+nnoremap <silent> <C-s>up :sign unplace *<CR>
+
 " }}}2
 
 " Function keys {{{2
