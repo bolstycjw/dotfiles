@@ -293,7 +293,7 @@ colorscheme gruvbox
 " Vim defaults overriding {{{2
 
 " Easier writing
-nnoremap ,w :write<CR>
+nnoremap ,w :sign unplace *<CR>:write<CR>
 
 " Disabling arrow keys, space key, exmode enter
 " with Q key, help with F1, etc.
@@ -445,9 +445,6 @@ nnoremap <expr> i IndentWithI()
 
 " Uppercase word in insert mode
 inoremap <C-u> <ESC>mzgUiw`za
-
-" Clear gutter signs
-nnoremap <silent> <C-s>up :sign unplace *<CR>
 
 " }}}2
 
