@@ -24,7 +24,7 @@ Plug 'Shougo/denite.nvim'
 " }}}2
 
 " File Navigation {{{2
-Plug 'Lokaltog/vim-easymotion'            " Move like the wind!
+Plug 'easymotion/vim-easymotion'            " Move like the wind!
 Plug 'haya14busa/incsearch.vim'           " Better search highlighting
 Plug 'jeffkreeftmeijer/vim-numbertoggle'  " Smarter line numbers
 Plug 'kshenoy/vim-signature'
