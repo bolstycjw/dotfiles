@@ -43,7 +43,8 @@ Plug 'tpope/vim-commentary'               " Comments stuff
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'                 " Change word surroundings
 Plug 'SirVer/ultisnips'
-Plug 'bolstycjw/vim-snippets'
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
@@ -73,18 +74,18 @@ Plug 'Shougo/vimproc.vim',                {'do' : 'make'}
 " }}}2
 
 " Autocomplete {{{2
-Plug 'Shougo/deoplete.nvim',              { 'do': ':UpdateRemotePlugins' }
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'autozimu/LanguageClient-neovim',    { 'branch': 'next', 'do': 'bash install.sh' }
 " }}}2
 
 " Javascript {{{2
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
-Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
-Plug 'carlitux/deoplete-ternjs'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescriptreact'] }
-Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
+" Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
 Plug 'Quramy/tsuquyomi',                  { 'for': ['typescript', 'typescriptreact'] }
 " }}}2
 
@@ -101,16 +102,13 @@ Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'thoughtbot/vim-rspec',              { 'for': 'ruby' }
-Plug 'uplus/deoplete-solargraph',         { 'for': 'ruby' }
 Plug 'nelstrom/vim-textobj-rubyblock',    { 'for': 'ruby' }
 Plug 'noprompt/vim-yardoc',               { 'for': 'ruby' }
 " }}}2
 
 " Python {{{2
 Plug 'klen/python-mode',                  { 'branch': 'develop', 'for': 'python' }
-Plug 'davidhalter/jedi-vim',              { 'for': 'python' }
 Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
-Plug 'zchee/deoplete-jedi',               { 'for': 'python' }
 " }}}2
 
 " Markdown {{{2
@@ -125,12 +123,10 @@ Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 
 " Golang {{{2
 Plug 'fatih/vim-go',                      { 'for': 'go' }
-Plug 'zchee/deoplete-go',                 { 'for': 'go' }
 " }}}2
 
 " Rust {{{2
 Plug 'rust-lang/rust.vim',                { 'for': 'rust' }
-Plug 'sebastianmarkow/deoplete-rust',     { 'for': 'rust' }
 " }}}2
 
 " Other languages {{{2
@@ -138,7 +134,6 @@ Plug 'keith/tmux.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'martin-svk/vim-yaml'
 Plug 'slim-template/vim-slim'
-Plug 'zchee/deoplete-clang'
 Plug 'wellle/tmux-complete.vim'
 " }}}2
 
