@@ -15,16 +15,10 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 ZSH_THEME="pure"
 
 # -- ZSH Plugins ---------------------------------------------------------------
-plugins=(asdf aws bower brew docker docker-compose gem git go golang history npm pip pj rails rake ruby tmux tmuxinator vi-mode yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf aws bower docker docker-compose gem git go golang history npm pip pj rails rake ruby tmux tmuxinator vi-mode yarn z zsh-autosuggestions zsh-syntax-highlighting)
 if exists "virtualenvwrapper"; then plugins+=virtualenvwrapper; fi
 
 fpath=($DOTFILES/zsh/custom/completion $fpath)
-
-# Add Homebrew completions to config if they can be found
-local brew_completions="$(brew --prefix)/share/zsh/site-functions"
-if [[ -d $brew_completions ]]; then
-  fpath=($fpath $brew_completions)
-fi
 
 # -- Oh My Zsh -----------------------------------------------------------------
 source $ZSH/oh-my-zsh.sh
@@ -44,8 +38,8 @@ unsetopt correct_all
 unsetopt correct
 
 # -- Variables -----------------------------------------------------------------
-export EDITOR="$(brew --prefix)/bin/nvim"
-alias docker-cleanup=docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
+export EDITOR="usr/bin/nvim"
+# alias docker-cleanup=docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
 
 # -- Aliases -------------------------------------------------------------------
 if [[ -f "$DOTFILES/aliases" ]]; then

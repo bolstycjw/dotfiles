@@ -189,7 +189,7 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 " Neovim-specific settings {{{2
 if has('nvim')
   let g:python2_host_prog = $HOME . '/.asdf/installs/python/2.7.14/bin/python'
-  let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.6.4/bin/python'
+  let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.7.0/bin/python'
   set inccommand=nosplit                                " Live preview of substitutes and other similar commands
 endif
 " }}}2
