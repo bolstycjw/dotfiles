@@ -10,5 +10,6 @@ windows:
         - nvim -S
         - #empty
   - server: #empty
+  - client: #empty
   - logs: #empty
   - console: #empty
