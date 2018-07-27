@@ -174,6 +174,12 @@ set suffixesadd+=.js,.rb                    " Add js and ruby files to suffixes
 set synmaxcol=160                           " Don't try to syntax highlight minified files
 set pumheight=10                            " Completion window max size
 
+" Set cursorline
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+
 " Set language to en_US
 let $LANG = 'en_US'
 
