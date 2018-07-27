@@ -25,5 +25,5 @@ let g:ale_sign_warning = '⚠'
 hi ALEWarningSign guifg=#F2C38F
 
 " Use ALT-k and ALT-j to navigate errors
-nmap <silent> <S-Tab> <Plug>(ale_previous_wrap)
-nmap <silent> <Tab> <Plug>(ale_next_wrap)
+nmap <silent> ˚ <Plug>(ale_previous_wrap)
+nmap <silent> ∆ <Plug>(ale_next_wrap)
