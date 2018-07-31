@@ -101,7 +101,6 @@ Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'thoughtbot/vim-rspec',              { 'for': 'ruby' }
-Plug 'uplus/deoplete-solargraph',         { 'for': 'ruby' }
 Plug 'nelstrom/vim-textobj-rubyblock',    { 'for': 'ruby' }
 Plug 'noprompt/vim-yardoc',               { 'for': 'ruby' }
 " }}}2
