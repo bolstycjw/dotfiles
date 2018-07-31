@@ -70,7 +70,7 @@ Plug 'tpope/vim-dispatch'                 " Run tasks asychronously in Tmux
 Plug 'w0rp/ale'                           " Linter
 Plug 'wincent/terminus'
 Plug 'tpope/vim-obsession'
-Plug 'Shougo/vimproc.vim',                {'do' : 'make'}
+Plug 'Shougo/vimproc.vim',                { 'do' : 'make' }
 " }}}2
 
 " Autocomplete {{{2
@@ -85,8 +85,8 @@ Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescriptreact'] }
-" Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
-Plug 'Quramy/tsuquyomi',                  { 'for': ['typescript', 'typescriptreact'] }
+Plug 'mhartington/nvim-typescript',       { 'do': './install.sh' }
+Plug 'ncm2/ncm2-tern',                    { 'do': 'npm install' }
 " }}}2
 
 " HTML/CSS {{{2
@@ -143,6 +143,10 @@ call plug#end()
 " vim-airline {{{3
 let g:airline_powerline_fonts = 1 " Enable the patched Powerline fonts
 " }}}3
+"
+" nvim-typescript {{{3
+let g:nvim_typescript#diagnosticsEnable = 0
+" }}}3
 
 " }}}2
 
@@ -169,6 +173,12 @@ set suffixesadd+=.js,.rb                    " Add js and ruby files to suffixes
 set synmaxcol=160                           " Don't try to syntax highlight minified files
 set pumheight=10                            " Completion window max size
 
+" Set cursorline
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+
 " Set language to en_US
 let $LANG = 'en_US'
 
@@ -184,7 +194,7 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 " Neovim-specific settings {{{2
 if has('nvim')
   let g:python2_host_prog = $HOME . '/.asdf/installs/python/2.7.14/bin/python'
-  let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.6.4/bin/python'
+  let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.7.0/bin/python'
   set inccommand=nosplit                                " Live preview of substitutes and other similar commands
 endif
 " }}}2
