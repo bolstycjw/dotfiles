@@ -38,7 +38,7 @@ unsetopt correct_all
 unsetopt correct
 
 # -- Variables -----------------------------------------------------------------
-export EDITOR="/usr/bin/nvim"
+export EDITOR=`which nvim`
 
 # -- Aliases -------------------------------------------------------------------
 if [[ -f "$DOTFILES/aliases" ]]; then
