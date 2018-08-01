@@ -43,7 +43,6 @@ Plug 'tpope/vim-commentary'               " Comments stuff
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'                 " Change word surroundings
 Plug 'SirVer/ultisnips'
-Plug 'ncm2/ncm2-ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-endwise'
@@ -73,10 +72,13 @@ Plug 'tpope/vim-obsession'
 Plug 'Shougo/vimproc.vim',                { 'do' : 'make' }
 " }}}2
 
-" Autocomplete {{{2
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
+" Language Client {{{2
 Plug 'autozimu/LanguageClient-neovim',    { 'branch': 'next', 'do': 'bash install.sh' }
+" }}}2
+
+" Deoplete {{{2
+Plug 'Shougo/deoplete.nvim',              { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs',          { 'for': 'javascript' }
 " }}}2
 
 " Javascript {{{2
@@ -85,8 +87,7 @@ Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescriptreact'] }
-Plug 'mhartington/nvim-typescript',       { 'do': './install.sh' }
-Plug 'ncm2/ncm2-tern',                    { 'do': 'npm install' }
+Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
 " }}}2
 
 " HTML/CSS {{{2
