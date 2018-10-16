@@ -119,7 +119,8 @@ Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 " }}}2
 
 " Elixir {{{2
-Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
+Plug 'elixir-editors/vim-elixir',         { 'for': 'elixir' }
+Plug 'slashmili/alchemist.vim',           { 'for': 'elixir' }
 " }}}2
 
 " Golang {{{2
