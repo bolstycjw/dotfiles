@@ -13,10 +13,13 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'typescript': ['tslint'],
 \   'typescriptreact': ['tslint'],
-\   'ruby': ['rubocop']
+\   'ruby': ['rubocop'],
+\   'elixir': ['mix_format']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
+
+let g:ale_fix_on_save = 1
 
 " Use a slightly slimmer error pointer
 let g:ale_sign_error = '✖'
