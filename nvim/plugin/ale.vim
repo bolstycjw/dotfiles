@@ -14,7 +14,8 @@ let g:ale_fixers = {
 \   'typescript': ['tslint'],
 \   'typescriptreact': ['tslint'],
 \   'ruby': ['rubocop'],
-\   'elixir': ['mix_format']
+\   'elixir': ['mix_format'],
+\   'cpp': ['clang-format']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
