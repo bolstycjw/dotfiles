@@ -129,6 +129,7 @@ Plug 'fatih/vim-go',                      { 'for': 'go' }
 
 " Rust {{{2
 Plug 'rust-lang/rust.vim',                { 'for': 'rust' }
+Plug 'racer-rust/vim-racer',              { 'for': 'rust' }
 " }}}2
 
 " Other languages {{{2
