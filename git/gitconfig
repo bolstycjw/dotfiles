@@ -144,7 +144,7 @@
   user = brolycjw
 
 [credential]
-  helper = osxkeychain
+	helper = cache
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
