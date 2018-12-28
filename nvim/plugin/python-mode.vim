@@ -11,3 +11,6 @@ let g:pymode_rope_completion = 0
 " Disable PyDoc integration in favor of Jedi
 let g:pymode_doc = 0
 let g:pymode_doc_bind = ''
+
+" Enable python 3 syntax checking
+let g:pymode_python = 'python3'

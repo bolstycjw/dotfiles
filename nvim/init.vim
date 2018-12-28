@@ -108,7 +108,7 @@ Plug 'noprompt/vim-yardoc',               { 'for': 'ruby' }
 " }}}2
 
 " Python {{{2
-Plug 'klen/python-mode',                  { 'branch': 'develop', 'for': 'python' }
+Plug 'python-mode/python-mode',           { 'branch': 'develop', 'for': 'python' }
 Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
 " }}}2
 
