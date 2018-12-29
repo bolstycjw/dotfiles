@@ -5,7 +5,6 @@ let g:LanguageClient_serverCommands = {
       \ 'cpp': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"/tmp/cquery/cache"}'],
       \ 'c': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"/tmp/cquery/cache"}'],
       \ 'ruby': ['tcp://localhost:7658'],
-      \ 'python': ['pyls'],
       \ }
 set formatexpr=LanguageClient_textDocument_rangeFormatting()
 
