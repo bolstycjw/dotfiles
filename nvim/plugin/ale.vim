@@ -4,7 +4,8 @@ let g:ale_linters = {
 \   'typescriptreact': ['tsserver'],
 \   'html': [],
 \   'eruby': [],
-\   'yaml': ['yamllint']
+\   'yaml': ['yamllint'],
+\   'python': ['flake8', 'pylint']
 \}
 
 let g:ale_linter_aliases = { 'typescriptreact': 'typescript' }
@@ -16,7 +17,8 @@ let g:ale_fixers = {
 \   'ruby': ['rubocop'],
 \   'elixir': ['mix_format'],
 \   'cpp': ['clang-format'],
-\   'rust': ['rustfmt']
+\   'rust': ['rustfmt'],
+\   'python': ['autopep8']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
