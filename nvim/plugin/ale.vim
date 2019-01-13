@@ -18,7 +18,8 @@ let g:ale_fixers = {
 \   'elixir': ['mix_format'],
 \   'cpp': ['clang-format'],
 \   'rust': ['rustfmt'],
-\   'python': ['autopep8']
+\   'python': ['autopep8'],
+\   'yaml': ['prettier']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
