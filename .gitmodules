@@ -7,3 +7,6 @@
 [submodule "zsh/custom/themes/spaceship-prompt"]
 	path = zsh/custom/themes/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt
+[submodule "zsh/custom/themes/pure"]
+	path = zsh/custom/themes/pure
+	url = https://github.com/bolstycjw/pure.git
