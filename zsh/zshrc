@@ -12,7 +12,11 @@ fpath=($ZSH_CUSTOM $fpath)
 
 # -- Theme ---------------------------------------------------------------------
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
-ZSH_THEME="pure"
+SPACESHIP_NODE_SYMBOL="\uf898 "
+SPACESHIP_RUBY_SYMBOL="\ue739 "
+SPACESHIP_DOCKER_SYMBOL="\uf308 "
+SPACESHIP_PACKAGE_SYMBOL="\uf8d2 "
+ZSH_THEME="spaceship"
 
 # -- ZSH Plugins ---------------------------------------------------------------
 plugins=(asdf bower docker docker-compose gem git go golang history npm pip pj rails rake ruby tmux tmuxinator vi-mode yarn z zsh-autosuggestions zsh-syntax-highlighting)
