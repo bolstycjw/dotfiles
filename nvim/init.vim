@@ -419,10 +419,10 @@ nnoremap [e :lprevious<CR>
 nnoremap gp `[v`]
 
 " Keep the cursor in place while joining lines
-nnoremap J mzJ`z
+nnoremap J mzJ`z :delmarks z<CR>
 
 " [S]plit line (sister to [J]oin lines) S is covered by cc.
-nnoremap S mzi<CR><ESC>`z
+nnoremap S mzi<CR><ESC>`z :delmarks z<CR>
 
 " Start substitute on current word under the cursor
 nnoremap ,s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
