@@ -97,5 +97,5 @@ echo ""
 if exists "asdf"; then
   echo_item "asdf is already installed" "green"
 else
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.5.0
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 fi
