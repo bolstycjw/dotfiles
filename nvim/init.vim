@@ -49,7 +49,7 @@ Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
+  \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 Plug 'Chiel92/vim-autoformat'
 " }}}2
