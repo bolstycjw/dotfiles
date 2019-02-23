@@ -50,7 +50,7 @@ Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+  \ 'for': ['javascript', 'typescript', 'typescript.tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 Plug 'Chiel92/vim-autoformat'
 " }}}2
 
@@ -86,8 +86,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
-Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescriptreact'] }
-Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescriptreact'] }
+Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescript.tsx'] }
+Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescript.tsx'] }
 " }}}2
 
 " HTML/CSS {{{2

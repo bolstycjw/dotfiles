@@ -1,19 +1,19 @@
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
 \   'typescript': ['tsserver'],
-\   'typescriptreact': ['tsserver'],
+\   'typescript.tsx': ['tsserver'],
 \   'html': [],
 \   'eruby': [],
 \   'yaml': ['yamllint'],
 \   'python': ['flake8', 'pylint']
 \}
 
-let g:ale_linter_aliases = { 'typescriptreact': 'typescript' }
+let g:ale_linter_aliases = { 'typescript.tsx': 'typescript' }
 
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'typescript': ['tslint'],
-\   'typescriptreact': ['tslint'],
+\   'typescript.tsx': ['tslint'],
 \   'ruby': ['rubocop'],
 \   'elixir': ['mix_format'],
 \   'cpp': ['clang-format'],
