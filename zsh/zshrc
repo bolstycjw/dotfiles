@@ -135,6 +135,11 @@ if [[ -d "$yarn_global_modules/.bin" ]]; then
   export PATH="$PATH:$yarn_global_modules/.bin"
 fi
 
+# -- Locale Settings -----------------------------------------------------------
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # -- Custom Settings -----------------------------------------------------------
 # autosuggest accept
 bindkey '^ ' autosuggest-accept
