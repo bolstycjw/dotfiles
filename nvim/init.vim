@@ -3,9 +3,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " UI {{{2
 Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
-Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/goyo.vim'
 Plug 'ryanoasis/vim-webdevicons'
-Plug 'trevordmiller/nova-vim'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'            " Handy info
 " }}}2
@@ -17,7 +16,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-grepper'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-scripts/ctags.vim'              " ctags related stuff
+" Plug 'vim-scripts/ctags.vim'              " ctags related stuff
 Plug 'ludovicchabant/vim-gutentags',      { 'tag': '0423321' }
 Plug 'mileszs/ack.vim'
 Plug 'Shougo/denite.nvim'
@@ -27,7 +26,7 @@ Plug 'Shougo/denite.nvim'
 Plug 'easymotion/vim-easymotion'            " Move like the wind!
 Plug 'haya14busa/incsearch.vim'           " Better search highlighting
 Plug 'jeffkreeftmeijer/vim-numbertoggle'  " Smarter line numbers
-Plug 'kshenoy/vim-signature'
+" Plug 'kshenoy/vim-signature'
 Plug 'vim-scripts/matchit.zip'            " More powerful % matching
 Plug 'wellle/targets.vim'
 " }}}2
@@ -35,7 +34,7 @@ Plug 'wellle/targets.vim'
 " Editing {{{2
 Plug 'Konfekt/FastFold'
 Plug 'bkad/CamelCaseMotion'
-Plug 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 Plug 'jasonlong/vim-textobj-css'
 Plug 'kana/vim-textobj-user'
 Plug 'sgur/vim-textobj-parameter'
@@ -51,25 +50,23 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'typescript.tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 " }}}2
 
 " Git {{{2
 Plug 'airblade/vim-gitgutter',            { 'tag': '932ffac' }
-Plug 'jez/vim-github-hub'
+" Plug 'jez/vim-github-hub'
 Plug 'junegunn/gv.vim',                   { 'on': 'GV' }
 Plug 'tpope/vim-fugitive'                 " Git stuff in Vim
 " }}}2
 
 " Task Running {{{2
-Plug 'Olical/vim-enmasse'                 " Edit all files in a Quickfix list
+" Plug 'Olical/vim-enmasse'                 " Edit all files in a Quickfix list
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'janko-m/vim-test'
-Plug 'tpope/vim-dispatch'                 " Run tasks asychronously in Tmux
+" Plug 'janko-m/vim-test'
 Plug 'w0rp/ale'                           " Linter
-Plug 'wincent/terminus'
-Plug 'tpope/vim-obsession'
-Plug 'Shougo/vimproc.vim',                { 'do' : 'make' }
+" Plug 'tpope/vim-obsession'
+" Plug 'Shougo/vimproc.vim',                { 'do' : 'make' }
 " }}}2
 
 " Language Client {{{2
@@ -84,7 +81,7 @@ Plug 'carlitux/deoplete-ternjs',          { 'for': 'javascript' }
 " Javascript {{{2
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'kchmck/vim-coffee-script'
+" Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescript.tsx'] }
 Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescript.tsx'] }
@@ -104,7 +101,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 Plug 'thoughtbot/vim-rspec',              { 'for': 'ruby' }
 Plug 'nelstrom/vim-textobj-rubyblock',    { 'for': 'ruby' }
-Plug 'noprompt/vim-yardoc',               { 'for': 'ruby' }
+" Plug 'noprompt/vim-yardoc',               { 'for': 'ruby' }
 " }}}2
 
 " Python {{{2
@@ -114,8 +111,8 @@ Plug 'zchee/deoplete-jedi',               { 'for': 'python' }
 " }}}2
 
 " Markdown {{{2
-Plug 'reedes/vim-pencil'                  " Markdown, Writing
-Plug 'godlygeek/tabular'
+Plug 'reedes/vim-pencil',                 { 'for': 'markdown' }
+" Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 " }}}2
 
@@ -134,10 +131,8 @@ Plug 'racer-rust/vim-racer',              { 'for': 'rust' }
 " }}}2
 
 " Other languages {{{2
-Plug 'keith/tmux.vim'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'martin-svk/vim-yaml'
-Plug 'slim-template/vim-slim'
+Plug 'ekalinin/Dockerfile.vim',           { 'for': 'Dockerfile' }
+Plug 'martin-svk/vim-yaml',               { 'for': 'eruby.yaml' }
 Plug 'wellle/tmux-complete.vim'
 " }}}2
 
