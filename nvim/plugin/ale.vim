@@ -19,7 +19,8 @@ let g:ale_fixers = {
 \   'cpp': ['clang-format'],
 \   'rust': ['rustfmt'],
 \   'python': ['autopep8'],
-\   'yaml': ['prettier']
+\   'yaml': ['prettier'],
+\   'json': ['prettier']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
