@@ -73,11 +73,6 @@ Plug 'w0rp/ale'                           " Linter
 Plug 'autozimu/LanguageClient-neovim',    { 'branch': 'next', 'do': 'bash install.sh' }
 " }}}2
 
-" Deoplete {{{2
-" Plug 'Shougo/deoplete.nvim',              { 'do': ':UpdateRemotePlugins' }
-" Plug 'carlitux/deoplete-ternjs',          { 'for': 'javascript' }
-" }}}2
-
 " NCM2 {{{2
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -114,7 +109,6 @@ Plug 'nelstrom/vim-textobj-rubyblock',    { 'for': 'ruby' }
 " Python {{{2
 Plug 'python-mode/python-mode',           { 'branch': 'develop', 'for': 'python' }
 Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
-" Plug 'zchee/deoplete-jedi',               { 'for': 'python' }
 " }}}2
 
 " Markdown {{{2
