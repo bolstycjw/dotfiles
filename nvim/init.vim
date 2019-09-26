@@ -134,7 +134,7 @@ Plug 'racer-rust/vim-racer',              { 'for': 'rust' }
 " Other languages {{{2
 Plug 'ekalinin/Dockerfile.vim',           { 'for': 'Dockerfile' }
 Plug 'martin-svk/vim-yaml',               { 'for': 'eruby.yaml' }
-Plug 'wellle/tmux-complete.vim'
+" Plug 'wellle/tmux-complete.vim'
 " }}}2
 
 call plug#end()
