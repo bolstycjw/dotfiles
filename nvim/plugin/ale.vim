@@ -20,7 +20,8 @@ let g:ale_fixers = {
 \   'rust': ['rustfmt'],
 \   'python': ['autopep8'],
 \   'yaml': ['prettier'],
-\   'json': ['prettier']
+\   'json': ['prettier'],
+\   'go': ['gofmt', 'goimports']
 \}
 
 nmap <leader>d <Plug>(ale_fix)
