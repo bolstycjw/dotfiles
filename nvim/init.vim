@@ -86,7 +86,6 @@ Plug 'mxw/vim-jsx'
 " Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescript.tsx'] }
-Plug 'mhartington/nvim-typescript',       { 'do': './install.sh', 'for': ['typescript', 'typescript.tsx'] }
 " }}}2
 
 " HTML/CSS {{{2
