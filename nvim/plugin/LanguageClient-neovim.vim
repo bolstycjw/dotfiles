@@ -6,7 +6,7 @@ let g:LanguageClient_serverCommands = {
       \ 'c': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"/tmp/cquery/cache"}'],
       \ 'ruby': ['tcp://localhost:7658'],
       \ 'go': ['gopls'],
-      \ 'typescript': ['javascript-typescript-stdio']
+      \ 'typescript': ['javascript-typescript-stdio'],
       \ 'typescript.tsx': ['javascript-typescript-stdio']
       \ }
 
