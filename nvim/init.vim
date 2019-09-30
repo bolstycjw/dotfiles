@@ -143,10 +143,6 @@ call plug#end()
 let g:airline_powerline_fonts = 1 " Enable the patched Powerline fonts
 " }}}3
 "
-" nvim-typescript {{{3
-let g:nvim_typescript#diagnostics_enable = 1
-" }}}3
-
 " }}}2
 
 " Section: General Config {{{1
