@@ -7,6 +7,7 @@ let g:LanguageClient_serverCommands = {
       \ 'ruby': ['tcp://localhost:7658'],
       \ 'go': ['gopls'],
       \ 'typescript': ['javascript-typescript-stdio']
+      \ 'typescript.tsx': ['javascript-typescript-stdio']
       \ }
 
 set formatexpr=LanguageClient_textDocument_rangeFormatting()
