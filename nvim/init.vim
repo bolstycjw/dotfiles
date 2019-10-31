@@ -45,7 +45,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-endwise'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
@@ -64,7 +64,6 @@ Plug 'tpope/vim-fugitive'                 " Git stuff in Vim
 " Plug 'Olical/vim-enmasse'                 " Edit all files in a Quickfix list
 Plug 'christoomey/vim-tmux-navigator'
 " Plug 'janko-m/vim-test'
-Plug 'w0rp/ale'                           " Linter
 " Plug 'tpope/vim-obsession'
 " Plug 'Shougo/vimproc.vim',                { 'do' : 'make' }
 " }}}2
