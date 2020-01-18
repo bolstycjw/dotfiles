@@ -2,6 +2,7 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
+      \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly', 'rls'],
       \ 'cpp': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"/tmp/cquery/cache"}'],
       \ 'c': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"/tmp/cquery/cache"}'],
       \ 'ruby': ['tcp://localhost:7658'],
