@@ -1,6 +1,10 @@
 " Section: Plugins {{{1
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Filetypes {{{2
+Plug 'Shougo/context_filetype.vim'
+" }}}2
+
 " UI {{{2
 Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
 " Plug 'junegunn/goyo.vim'
@@ -86,6 +90,7 @@ Plug 'mxw/vim-jsx'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescript.tsx'] }
 Plug 'mhartington/nvim-typescript',       { 'for': ['typescript', 'typescript.tsx'], 'commit': 'eca2bb9', 'do': './install.sh' }
+Plug 'evanleck/vim-svelte',               { 'for': 'svelte' }
 " }}}2
 
 " HTML/CSS {{{2
