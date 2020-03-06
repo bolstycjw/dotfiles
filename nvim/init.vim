@@ -89,7 +89,6 @@ Plug 'mxw/vim-jsx'
 " Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node',                     { 'for': 'javascript' }
 Plug 'HerringtonDarkholme/yats.vim',      { 'for': ['typescript', 'typescript.tsx'] }
-Plug 'mhartington/nvim-typescript',       { 'for': ['typescript', 'typescript.tsx'], 'commit': 'eca2bb9', 'do': './install.sh' }
 Plug 'evanleck/vim-svelte',               { 'for': 'svelte' }
 " }}}2
 
@@ -148,10 +147,6 @@ let g:airline_powerline_fonts = 1 " Enable the patched Powerline fonts
 " }}}3
 "
 " }}}2
-
-" nvim-typescript {{{3
-let g:nvim_typescript#diagnostics_enable = 0
-" }}}3
 
 " Section: General Config {{{1
 " ----------------------------
