@@ -15,8 +15,9 @@ let g:LanguageClient_serverCommands = {
 
 set formatexpr=LanguageClient_textDocument_rangeFormatting()
 
+autocmd FileType typescript,typescriptreact nnoremap <buffer> <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
+
 nnoremap <silent> <Leader>h :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <Leader>r :call LanguageClient#textDocument_references()<CR>
 nnoremap <silent> <Leader>s :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <silent> <Leader>i :call LanguageClient#textDocument_codeAction()<CR>
