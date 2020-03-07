@@ -4,6 +4,7 @@ set hidden
 let g:LanguageClient_serverCommands = {
       \ 'javascript': ['javascript-typescript-stdio'],
       \ 'javascript.jsx': ['javascript-typescript-stdio'],
+      \ 'typescript': ['typescript-language-server', '--stdio'],
       \ 'typescriptreact': ['typescript-language-server', '--stdio'],
       \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly', 'rls'],
       \ 'cpp': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"/tmp/cquery/cache"}'],
