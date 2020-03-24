@@ -73,7 +73,8 @@ Plug 'christoomey/vim-tmux-navigator'
 " }}}2
 
 " Language Client {{{2
-Plug 'autozimu/LanguageClient-neovim',    { 'branch': 'next', 'do': 'bash install.sh' }
+" Plug 'autozimu/LanguageClient-neovim',    { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " }}}2
 
 " NCM2 {{{2
