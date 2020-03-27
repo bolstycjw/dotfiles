@@ -1,6 +1,6 @@
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
-\   'typescript': ['tsserver'],
+\   'typescript': ['tsserver', 'eslint'],
 \   'typescriptreact': ['tsserver'],
 \   'svelte': ['eslint'],
 \   'html': [],

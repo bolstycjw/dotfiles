@@ -1,5 +1,5 @@
 " coc extensions
-let g:coc_global_extensions = ['coc-tsserver']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-solargraph']
 
 nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> <Leader>r <Plug>(coc-references)
