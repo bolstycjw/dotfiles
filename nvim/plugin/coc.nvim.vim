@@ -5,3 +5,6 @@ nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> <Leader>r <Plug>(coc-references)
 nmap <silent> <Leader>i <Plug>(coc-codeaction)
 nmap <silent> <Leader>e <Plug>(coc-rename)
+
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
