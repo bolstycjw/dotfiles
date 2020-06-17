@@ -42,7 +42,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -a 'Firefox Developer Edition'"
+                    "shell_command": "open -a 'Google Chrome'"
                   }
                 ],
                 "type": "basic"
