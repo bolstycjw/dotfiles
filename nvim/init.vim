@@ -110,11 +110,6 @@ Plug 'nelstrom/vim-textobj-rubyblock',    { 'for': 'ruby' }
 " Plug 'noprompt/vim-yardoc',               { 'for': 'ruby' }
 " }}}2
 
-" Python {{{2
-Plug 'python-mode/python-mode',           { 'branch': 'develop', 'for': 'python' }
-Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
-" }}}2
-
 " Markdown {{{2
 Plug 'reedes/vim-pencil',                 { 'for': 'markdown' }
 " Plug 'godlygeek/tabular'
