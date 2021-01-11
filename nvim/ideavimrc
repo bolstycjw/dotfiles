@@ -1,0 +1,55 @@
+
+let mapleader = " "
+set number                                  " Show line numbers
+set relativenumber                          " Show line numbers
+set ignorecase                              " Ignore case by default
+set smartcase                               " Make search case sensitive only if it contains uppercase letters
+set wrapscan                                " Search again from top when reached the bottom
+set nohlsearch                              " Don't highlight after search
+
+set scrolloff=3 " 3 lines above/below cursor when scrolling
+
+" Emulated Plugins
+set surround
+set argtextobj
+set commentary
+set highlightedyank
+set ideajoin
+set easymotion
+set multiple-cursors
+
+" Copy to system clipboard as well
+set clipboard+=unnamed
+
+
+nnoremap ; :
+
+" Uppercase word in insert mode
+inoremap <C-u> <ESC>mzgUiw`za
+
+" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv<CR>
+
+" Don't cancel visual select when shifting
+xnoremap <  <gv
+xnoremap >  >gv
+
+" Easier writing
+nnoremap ,w :sign unplace *<CR>:write<CR>
+
+" Errors
+nmap <Tab> :action GotoNextError<CR>
+nmap <Tab> :action GotoPreviousError<CR>
+
+" Run spec
+nmap <leader>s :action RunClass<CR>
+
+" Go to test
+:command A action GotoTest
+
+" Refactor
+nmap <leader>e :action RenameElement<CR>
+
+" Hide tool windows
+nmap <C-b>z :action HideAllWindows<CR>
