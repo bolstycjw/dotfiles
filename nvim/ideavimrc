@@ -53,3 +53,33 @@ nmap <leader>e :action RenameElement<CR>
 
 " Hide tool windows
 nmap <C-b>z :action HideAllWindows<CR>
+
+" Don't yank to default register when changing something
+nnoremap c "xc
+xnoremap c "xc
+"
+" Easier window switching
+nmap <silent> <C-w><C-w> :call utils#intelligentCycling()<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+noremap <leader>tb :action FileStructurePopup<CR>
+
+noremap ga :action GotoAction<CR>
+noremap gd :action GotoDeclaration<CR>
+noremap gi :action GotoImplementation<CR>
+noremap gs :action GotoSuperMethod<CR>
+noremap ]e :action GotoNextError<CR>
+noremap [e :action GotoPreviousError<CR>
+noremap <leader>tb :action ActivateStructureToolWindow<CR>
+
+noremap <Tab> :action EditorDown<CR>
+noremap <S-Tab> :action EditorUp<CR>
+noremap <C-j> :action EditorDown<CR>
+noremap <C-k> :action EditorUp<CR>
+
+noremap <C-r> :action $Redo<CR>
+noremap <C-c> :action EditorEscape<CR>
+noremap <M-S-'> :action MaximizeToolWindow<CR>
