@@ -17,6 +17,7 @@ set highlightedyank
 set ideajoin
 set easymotion
 set multiple-cursors
+set sneak
 
 " Copy to system clipboard as well
 set clipboard+=unnamed
