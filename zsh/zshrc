@@ -19,7 +19,7 @@ SPACESHIP_PACKAGE_SYMBOL="\uf8d2 "
 ZSH_THEME="pure"
 
 # -- ZSH Plugins ---------------------------------------------------------------
-plugins=(asdf bower docker docker-compose gem git golang history npm pip pj rails rake ruby tmux tmuxinator vi-mode yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(bower docker docker-compose gem git golang history npm pip pj rails rake ruby tmux tmuxinator vi-mode yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 fpath=($DOTFILES/zsh/custom/completion $fpath)
 
