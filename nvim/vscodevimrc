@@ -1,0 +1,35 @@
+
+let mapleader = " "
+set number                                  " Show line numbers
+set relativenumber                          " Show line numbers
+set ignorecase                              " Ignore case by default
+set smartcase                               " Make search case sensitive only if it contains uppercase letters
+set wrapscan                                " Search again from top when reached the bottom
+set nohlsearch                              " Don't highlight after search
+
+set scrolloff=3 " 3 lines above/below cursor when scrolling
+
+" Copy to system clipboard as well
+set clipboard+=unnamed
+
+
+nnoremap ; :
+
+" Uppercase word in insert mode
+inoremap <C-u> <ESC>mzgUiw`za
+
+" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv<CR>
+
+" Don't cancel visual select when shifting
+xnoremap <  <gv
+xnoremap >  >gv
+
+" Easier writing
+nnoremap ,w :sign unplace *<CR>:write<CR>
+
+" Don't yank to default register when changing something
+nnoremap c "xc
+xnoremap c "xc
+"
